@@ -1,0 +1,86 @@
+.btn{
+    pointer-events:none;
+    cursor:no-drop;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.joueur{
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    padding: 1em;
+    margin: 1em;
+    border:1px solid #999
+}
+
+.joueur:hover{
+    cursor:no-drop;
+}
+
+.joueurActif{
+   pointer-events: all; 
+   background-color: #ebf2ce;
+   border:1px solid #94ad2a;
+}
+
+.joueurActif .btn{
+    pointer-events: all;
+    opacity: 1;
+}
+
+.joueurActif .btn{
+    cursor:pointer;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.joueurActif:hover{
+    cursor:pointer;
+}
+
+
+.joueurStop{
+    pointer-events: none; 
+    border: 1px solid red;
+ }
+
+.carteZone{
+    flex-grow: 1;
+}
+
+ .carteZone img{
+    max-width: min-content;
+ }
+
+.gagnant::before{
+   content: 'WINNER!';
+}
+
+.gagnant{
+    background-color:#fff1cc;
+    border: 1px solid #f7c539;
+}
+
+.nbjouer {
+    display: inline-block;
+    margin-right: 20px;
+}
+ 
+
+.nbjouer h3{
+    display: inline-block;
+}
+
+.nbjouer h3 span{
+    font-size: 24px;
+    color: #666;
+}
+
+.rejouer{
+    display: none;
+}
+
+.noWinner{
+    color:rebeccapurple;
+}
